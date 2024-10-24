@@ -7,11 +7,13 @@ import Layout from '../layouts/Layout.astro';
 	<section class="relative h-screen">
 	  <!-- Imagen de fondo -->
 	  <div class="absolute inset-0 z-0">
-		<img 
-		  src="../../src/assets/sanmatin.jpg" 
-		  alt="Hacienda San Martín" 
-		  class="w-full h-full object-cover"
-		/>
+      <img 
+      src="https://wondervideoscol.s3.us-east-2.amazonaws.com/sanmatin.jpg"
+      alt="Hacienda San Martín"
+      class="w-full h-full object-cover"
+      loading="eager"
+      fetchpriority="high"
+    />
 		<!-- Overlay gradiente para mejor legibilidad -->
 		<div class="absolute inset-0 bg-black/30"></div>
 	  </div>
